@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FAFBFD"
+    android:gravity="center"
+    tools:context=".Authentication.SignIn">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_back"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:padding="20dp">
+
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/imageback"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_location"
+                    tools:ignore="ContentDescription">
+                </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Location Tracker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:id="@+id/googleliner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_back"
+            android:gravity="center"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/google_signIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_google"
+                android:padding="1dp"
+                android:text="Sign in with Google"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded,UseCompatTextViewDrawableXml" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/EnterLiner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/enter_back"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:padding="15dp">
+
+            <TextView
+
+                android:id="@+id/Enter"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="Enter"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

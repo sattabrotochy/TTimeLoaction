@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1080658147919",
+    "firebase_url": "https://ttimeloaction.firebaseio.com",
+    "project_id": "ttimeloaction",
+    "storage_bucket": "ttimeloaction.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080658147919:android:bdab53096c72f0e62e883a",
+        "android_client_info": {
+          "package_name": "com.shuvo.ttimeloaction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080658147919-bbo676j5qqaigggrg1kj0vck0bnghnv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0cwu4J8hCyGjIJ3K3P0qHXro_RUjVa_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080658147919-bbo676j5qqaigggrg1kj0vck0bnghnv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
