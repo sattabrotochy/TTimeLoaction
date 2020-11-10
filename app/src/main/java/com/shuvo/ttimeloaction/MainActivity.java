@@ -1,5 +1,7 @@
 package com.shuvo.ttimeloaction;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -11,6 +13,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.google.firebase.auth.FirebaseAuth;
 import com.shuvo.ttimeloaction.Authentication.SignIn;
 import com.shuvo.ttimeloaction.Foreground.ExampleService;
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     LinearLayout Start_serviceID, Stop_serviceID, locationId, friendLocationID;
     FirebaseAuth auth;
+    Context context=MainActivity.this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +42,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, FriendLocation.class));
+                Animatoo.animateSwipeLeft(context);
             }
         });
         locationId.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, MyAllLocation.class));
+                Animatoo.animateSwipeLeft(context);
 
 
             }
@@ -54,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 startServiceUser();
+
             }
         });
         Stop_serviceID.setOnClickListener(new View.OnClickListener() {
@@ -73,10 +80,10 @@ public class MainActivity extends AppCompatActivity {
             startForegroundService(intent);
 
             startLoaction();
-            Toast.makeText(this, "lalal", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Service start", Toast.LENGTH_SHORT).show();
         } else {
             startService(intent);
-            Toast.makeText(this, "lalal22", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Service not Start", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -98,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

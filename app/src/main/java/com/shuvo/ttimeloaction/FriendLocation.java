@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.shuvo.ttimeloaction.Class.DataModel;
 import com.shuvo.ttimeloaction.Volly.RequestHandler;
 
@@ -131,5 +132,11 @@ public class FriendLocation extends AppCompatActivity {
             Toast.makeText(this, "Invalid Code", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Animatoo.animateSwipeRight(context);
     }
 }

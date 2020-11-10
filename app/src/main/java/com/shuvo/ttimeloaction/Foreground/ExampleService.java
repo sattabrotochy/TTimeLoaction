@@ -217,7 +217,7 @@ public class ExampleService extends Service{
             address = addresses.get(0).getAddressLine(0);
             mycity = addresses.get(0).getLocality();
             dataSave();
-            Toast.makeText(this, address, Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(this, address, Toast.LENGTH_SHORT).show();
 
 
         } catch (IOException e) {
@@ -236,7 +236,7 @@ public class ExampleService extends Service{
             @Override
             public void onResponse(String response)
             {
-                Toast.makeText(getApplicationContext(), "Location save successful", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getApplicationContext(), "Location save successful", Toast.LENGTH_SHORT).show();
                 address="";
 
 

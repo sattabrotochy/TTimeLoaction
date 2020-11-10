@@ -63,6 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
+            android:textColor="#68D16C"
             android:padding="1dp"
             android:text="Start Service"
             android:textSize="18sp"
@@ -88,6 +89,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="1dp"
+            android:textColor="#CF5151"
             android:text="Stop Service"
             android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,UseCompatTextViewDrawableXml" />
@@ -112,6 +114,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="1dp"
+            android:textColor="#3E3B3B"
             android:text="All Location"
             android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,UseCompatTextViewDrawableXml" />
@@ -136,6 +139,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="1dp"
+            android:textColor="#3E3B3B"
             android:text="Friend Location"
             android:textSize="18sp"
             tools:ignore="HardcodedText,RtlHardcoded,UseCompatTextViewDrawableXml" />

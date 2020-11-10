@@ -10,6 +10,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.google.firebase.auth.FirebaseAuth;
 import com.shuvo.ttimeloaction.Class.DataModel;
 import com.shuvo.ttimeloaction.Volly.RequestHandler;
@@ -117,5 +118,11 @@ public class MyAllLocation extends AppCompatActivity {
             Toast.makeText(this, "Data not Found", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Animatoo.animateSwipeRight(context);
     }
 }

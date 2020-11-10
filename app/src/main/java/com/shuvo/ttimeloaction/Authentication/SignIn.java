@@ -68,11 +68,15 @@ public class SignIn extends AppCompatActivity {
 
         progressDialog=new ProgressDialog(this);
         check=new InternetCheck(this);
+
+
         Enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 interNetCheck();
+
+
 
             }
         });
@@ -90,12 +94,19 @@ public class SignIn extends AppCompatActivity {
 
     }
 
+    private void authentivationCheck() {
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            startActivity(new Intent(context, MainActivity.class));
+            finish();
+            Animatoo.animateSwipeLeft(context);
+        }
+    }
 
 
     private void interNetCheck() {
         if (check.isConnected())
         {
-            goToMainActivity();
+            authentivationCheck();
         }
         else
 
@@ -153,6 +164,11 @@ public class SignIn extends AppCompatActivity {
 
            googleliner.setVisibility(View.INVISIBLE);
            EnterLiner.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            google_signIn.setVisibility(View.VISIBLE);
+            EnterLiner.setVisibility(View.INVISIBLE);
         }
 
         AllowLoaction();
